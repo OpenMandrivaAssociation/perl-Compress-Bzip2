@@ -12,7 +12,6 @@ Group:		    Development/Perl
 Url:		    http://search.cpan.org/dist/%{module}
 Source:		    http://www.cpan.org/modules/by-module/Compress/%{module}-%{version}.tar.bz2
 Buildrequires:	perl-devel
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 The Compress::Bzip2 module provides a Perl interface to the Bzip2 compression
