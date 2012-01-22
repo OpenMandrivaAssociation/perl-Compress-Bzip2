@@ -3,7 +3,7 @@
 
 Name:		    perl-%{upstream_name}
 Version:	    %perl_convert_version %{upstream_version}
-Release:	    %mkrel 4
+Release:	    %mkrel 5
 
 Summary:	    Interface to Bzip2 compression library
 License:	    GPL+ or Artistic
