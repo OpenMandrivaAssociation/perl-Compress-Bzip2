@@ -1,14 +1,14 @@
 %define upstream_name	 Compress-Bzip2
-%define upstream_version 2.09
+%define upstream_version 2.17
 
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	11
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Compress/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Compress/Compress-Bzip2-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 
 %description
@@ -36,4 +36,5 @@ All string parameters can either be a scalar or a scalar reference.
 %{perl_vendorarch}/Compress
 %{perl_vendorarch}/auto/Compress
 %{_mandir}/man3/*
+
 
