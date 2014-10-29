@@ -1,10 +1,10 @@
 %define upstream_name	 Compress-Bzip2
-%define upstream_version 2.18
+%define upstream_version 2.19
 
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
