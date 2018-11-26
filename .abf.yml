@@ -1,6 +1,2 @@
-removed_sources:
-  Compress-Bzip2-2.09.tar.bz2: c15714fdd6ccf0db06da4db30cca760f005cf65b
-  Compress-Bzip2-2.17.tar.gz: 614d08ccb15a44612e2a3549eb480b21f0e2dcdd
-  Compress-Bzip2-2.18.tar.gz: 841af7ae82a4686775dc21d27e13f7712466b028
 sources:
-  Compress-Bzip2-2.19.tar.gz: d4e15cda206fab68842f97590a22426c295c3b14
+  Compress-Bzip2-2.26.tar.gz: a22eaea6cc9a161493104dff1fe291b37de108f2
