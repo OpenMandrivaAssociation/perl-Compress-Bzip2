@@ -33,7 +33,7 @@ All string parameters can either be a scalar or a scalar reference.
 %make_install
 
 %files 
-%doc README Changes
+%doc README.md Changes
 %{perl_vendorarch}/Compress
 %{perl_vendorarch}/auto/Compress
 %{_mandir}/man3/*
