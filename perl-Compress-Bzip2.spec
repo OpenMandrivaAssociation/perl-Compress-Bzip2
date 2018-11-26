@@ -1,10 +1,10 @@
 %define upstream_name	 Compress-Bzip2
-%define upstream_version 2.19
+%define upstream_version 2.26
 
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -23,14 +23,14 @@ All string parameters can either be a scalar or a scalar reference.
 %setup -qn %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
+%{__perl} Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
+%make_build
 
 %check
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %doc README Changes
