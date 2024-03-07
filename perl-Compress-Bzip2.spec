@@ -1,5 +1,5 @@
 %define upstream_name	 Compress-Bzip2
-%define upstream_version 2.26
+%define upstream_version 2.28
 
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
@@ -23,11 +23,18 @@ All string parameters can either be a scalar or a scalar reference.
 %setup -qn %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor NO_PACKLIST=1 NO_PERLLOCAL=1 \
+    OPTIMIZE="%{optflags}"
 %make_build
 
 %check
-%make test
+
+# we have pbzip2 which seems to produce slightly
+# difference outputs which this uses as reference
+# so use std one to avoid a failing test
+ln -s /usr/bin/bzip2-st ./bzip2
+export PATH=$PWD:$PATH
+%make_build test
 
 %install
 %make_install
