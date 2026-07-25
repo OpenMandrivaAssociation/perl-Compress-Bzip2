@@ -3,12 +3,12 @@
 
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Compress/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/rurban/Compress-Bzip2
+Source0:	https://cpan.metacpan.org/authors/id/R/RU/RURBAN/Compress-Bzip2-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
