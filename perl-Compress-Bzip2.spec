@@ -1,14 +1,12 @@
 %define upstream_name	 Compress-Bzip2
-%define upstream_version 2.28
-
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	2.28
+Release:	6
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rurban/Compress-Bzip2
-Source0:	https://cpan.metacpan.org/authors/id/R/RU/RURBAN/Compress-Bzip2-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RU/RURBAN/Compress-Bzip2-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ of the functionality provided by Bzip2 is available in Compress::Bzip2.
 All string parameters can either be a scalar or a scalar reference.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor NO_PACKLIST=1 NO_PERLLOCAL=1 \
