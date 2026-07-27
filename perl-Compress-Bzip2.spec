@@ -2,7 +2,7 @@
 Summary:	Interface to Bzip2 compression library
 Name:		perl-%{upstream_name}
 Version:	2.28
-Release:	6
+Release:	7
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rurban/Compress-Bzip2
